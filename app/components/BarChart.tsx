@@ -11,6 +11,7 @@ export function BarChart() {
   ];
 
   const maxValue = 5000;
+  const gridLines = [5, 4, 3, 2, 1];
 
   return (
     <div className="w-full h-full relative px-12 py-8">
@@ -24,8 +25,16 @@ export function BarChart() {
         <span>0</span>
       </div>
 
+      {/* Grid lines */}
+      <div className="absolute left-12 right-12 top-8 bottom-16 flex flex-col justify-between">
+        {gridLines.map((line, index) => (
+          <div key={index} className="w-full border-t border-gray-200"></div>
+        ))}
+        <div className="w-full border-t border-gray-200"></div>
+      </div>
+
       {/* Bars container */}
-      <div className="flex items-end justify-around gap-6 h-full pb-8">
+      <div className="flex items-end justify-around gap-6 h-full pb-8 relative">
         {data.map((item, index) => {
           const heightPercentage = (item.value / maxValue) * 100;
           const isHighlighted = item.percentage !== null;
@@ -44,7 +53,7 @@ export function BarChart() {
 
               {/* Bar with pattern */}
               <div 
-                className="w-full rounded-full relative overflow-hidden mb-2"
+                className="w-full mb-2 rounded-full overflow-hidden"
                 style={{ 
                   height: `${heightPercentage}%`,
                   backgroundColor: isHighlighted ? '#108653' : '#86EFAC',
@@ -53,7 +62,7 @@ export function BarChart() {
               >
                 {/* Diagonal stripes pattern */}
                 <div 
-                  className="absolute inset-0 w-full h-full"
+                  className="w-full h-full rounded-full"
                   style={{
                     backgroundImage: `repeating-linear-gradient(
                       45deg,

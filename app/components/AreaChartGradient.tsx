@@ -78,6 +78,8 @@ export function AreaChartGradient() {
     return null;
   }
 
+  const gridLines = [0, 20, 40, 60, 80, 100];
+
   return (
     <div className="relative h-24 w-full">
       <div
@@ -92,6 +94,20 @@ export function AreaChartGradient() {
           className="w-full h-full overflow-visible"
           preserveAspectRatio="none"
         >
+          {/* Grid lines */}
+          {gridLines.map((y, index) => (
+            <line
+              key={index}
+              x1="0"
+              y1={y}
+              x2="100"
+              y2={y}
+              stroke="#e5e7eb"
+              strokeWidth="0.5"
+              vectorEffect="non-scaling-stroke"
+            />
+          ))}
+
           {/* Area */}
           <path d={areaPath} className="text-blue-200" fill="url(#areaGradient)" />
           <defs>

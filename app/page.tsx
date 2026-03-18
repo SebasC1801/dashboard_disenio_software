@@ -150,10 +150,10 @@ export default function Home() {
 
               {/* Payment History Card */}
               <div className="bg-white rounded-3xl p-6 w-[1240px] -mr-[725px]">
-                <div className="flex items-center justify-between mb-6 ml-4 mr-2">
+                <div className="flex items-center justify-between mb-4 ml-4 mr-2">
                   <div>
-                    <h3 className="text-base text-black font-bold">Payment History</h3>
-                    <p className="text-xs text-gray-400">Recent payments history</p>
+                    <h3 className="text-lg text-black font-bold">Payment History</h3>
+                    <p className="text-sm text-gray-400">Recent payments history</p>
                   </div>
                   <button className="p-2 bg-gray-100 hover:bg-gray-200 rounded-full">
                     <Image src="/icons/arrowcorner.svg" alt="Arrow" width={20} height={20} />
@@ -161,7 +161,7 @@ export default function Home() {
                 </div>
 
                 {/* Table Header */}
-                <div className="grid grid-cols-5 gap-4 text-xs text-gray-400 mb-4 px-4">
+                <div className="grid grid-cols-5 gap-4 text-base text-gray-400 mb-3 px-4">
                   <span>Name</span>
                   <span>Date</span>
                   <span>Time</span>
@@ -170,47 +170,47 @@ export default function Home() {
                 </div>
 
                 {/* Payment Items */}
-                <div className="space-y-3">
-                  <div className="grid grid-cols-5 gap-4 items-center text-sm px-4 py-2 hover:bg-gray-50 rounded-lg">
+                <div className="space-y-2">
+                  <div className="grid grid-cols-5 gap-4 items-center px-4 py-2 hover:bg-gray-50 rounded-lg">
                     <div className="flex items-center gap-2">
-                      <Image src="/icons/dribbble_design.svg" alt="Dribbble" width={24} height={24} />
+                      <Image src="/icons/dribbble_design.svg" alt="Dribbble" width={28} height={28} />
                       <div>
-                        <p className="font-medium text-xs text-black">Dribbble Design</p>
-                        <p className="text-xs text-gray-400">+18.67%</p>
+                        <p className="font-medium text-base text-black">Dribbble Design</p>
+                        <p className="text-sm text-gray-400">+18.67%</p>
                       </div>
                     </div>
-                    <span className="text-xs text-black">16 Jun 2025</span>
-                    <span className="text-xs text-black">10:30 PM</span>
-                    <span className="text-xs text-green-600">● Successful</span>
-                    <span className="text-xs text-right text-black">89,345.23 USD</span>
+                    <span className="text-base text-black">16 Jun 2025</span>
+                    <span className="text-base text-black">10:30 PM</span>
+                    <span className="text-base text-green-600">● Successful</span>
+                    <span className="text-base text-right text-black">89,345.23 USD</span>
                   </div>
 
-                  <div className="grid grid-cols-5 gap-4 items-center text-sm px-4 py-2 hover:bg-gray-50 rounded-lg">
+                  <div className="grid grid-cols-5 gap-4 items-center px-4 py-2 hover:bg-gray-50 rounded-lg">
                     <div className="flex items-center gap-2">
-                      <Image src="/icons/google.svg" alt="Google" width={24} height={24} />
+                      <Image src="/icons/google.svg" alt="Google" width={28} height={28} />
                       <div>
-                        <p className="font-medium text-xs text-black">Google Pay</p>
-                        <p className="text-xs text-gray-400">+9.34%</p>
+                        <p className="font-medium text-base text-black">Google Pay</p>
+                        <p className="text-sm text-gray-400">+9.34%</p>
                       </div>
                     </div>
-                    <span className="text-xs text-black">15 Jun 2025</span>
-                    <span className="text-xs text-black">11:45 PM</span>
-                    <span className="text-xs text-green-600">● Successful</span>
-                    <span className="text-xs text-right text-black">12,345.89 USD</span>
+                    <span className="text-base text-black">15 Jun 2025</span>
+                    <span className="text-base text-black">11:45 PM</span>
+                    <span className="text-base text-green-600">● Successful</span>
+                    <span className="text-base text-right text-black">12,345.89 USD</span>
                   </div>
 
-                  <div className="grid grid-cols-5 gap-4 items-center text-sm px-4 py-2 hover:bg-gray-50 rounded-lg">
+                  <div className="grid grid-cols-5 gap-4 items-center px-4 py-2 hover:bg-gray-50 rounded-lg">
                     <div className="flex items-center gap-2">
-                      <Image src="/icons/amazon.svg" alt="Amazon" width={24} height={24} />
+                      <Image src="/icons/amazon.svg" alt="Amazon" width={28} height={28} />
                       <div>
-                        <p className="font-medium text-xs text-black">Amazon Shopping</p>
-                        <p className="text-xs text-gray-400">+12.23%</p>
+                        <p className="font-medium text-base text-black">Amazon Shopping</p>
+                        <p className="text-sm text-gray-400">+12.23%</p>
                       </div>
                     </div>
-                    <span className="text-xs text-black">14 Jun 2025</span>
-                    <span className="text-xs text-black">10:15 PM</span>
-                    <span className="text-xs text-green-600">● Successful</span>
-                    <span className="text-xs text-right text-black">32,123.67 USD</span>
+                    <span className="text-base text-black">14 Jun 2025</span>
+                    <span className="text-base text-black">10:15 PM</span>
+                    <span className="text-base text-green-600">● Successful</span>
+                    <span className="text-base text-right text-black">32,123.67 USD</span>
                   </div>
                 </div>
               </div>
@@ -246,7 +246,7 @@ export default function Home() {
             <div className="flex flex-col gap-6">
               {/* Payment Goal Balance Card */}
               <div className="bg-white rounded-3xl p-6 w-[475px]">
-                <div className="flex items-center justify-between mb-6 ml-4 mr-2">
+                <div className="flex items-center justify-between mb-8 ml-4 mr-2">
                   <div>
                     <h3 className="text-base text-gray-700 font-bold">Payment Goal</h3>
                     <p className="text-xs text-gray-400">Total amount goal</p>
@@ -256,13 +256,13 @@ export default function Home() {
                   </button>
                 </div>
 
-                <div className="mb-4">
+                <div className="mb-6">
                   <p className="text-xs text-gray-500 mb-2">Total Balance</p>
                   <p className="text-3xl font-bold text-black mb-1">$32,678<span className="text-gray-400">.90</span></p>
                 </div>
 
                 {/* Chart */}
-                <div className="mb-4">
+                <div className="mb-6">
                   <AreaChartGradient />
                 </div>
 
@@ -270,7 +270,7 @@ export default function Home() {
                   <button className="flex-1 flex items-center justify-center gap-2 py-2 rounded-full text-white text-sm" style={{backgroundColor: '#108653'}}>
                     Send ↑
                   </button>
-                  <button className="flex-1 flex items-center justify-center gap-2 py-2 rounded-full bg-gray-100 text-sm">
+                  <button className="flex-1 flex items-center justify-center gap-2 py-2 rounded-full bg-gray-100 text-sm text-black">
                     Receive ↓
                   </button>
                 </div>
@@ -283,20 +283,20 @@ export default function Home() {
                     <Image src="/icons/credit-card.svg" alt="Credit Card" width={18} height={18} />
                   </div>
                   <div>
-                    <h3 className="text-sm text-black font-bold">Amount of credit</h3>
-                    <p className="text-xs text-gray-400">Total refund amount with fee</p>
+                    <h3 className="text-base text-black font-bold">Amount of credit</h3>
+                    <p className="text-sm text-gray-400">Total refund amount with fee</p>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-between mb-16">
-                  <p className="text-3xl font-bold text-black">$8,945<span className="text-gray-400">.89</span></p>
+                  <p className="text-5xl font-bold text-black">$8,945<span className="text-gray-400">.89</span></p>
                   <span className="px-3 py-1 rounded-full text-xs text-white" style={{backgroundColor: '#108653'}}>
                     +12.8%
                   </span>
                 </div>
 
                 {/* Mandatory Payments Section */}
-                <div className="bg-gray-100 rounded-2xl p-5">
+                <div className="bg-gray-100 rounded-2xl p-5 mb-4">
                   <div className="flex items-center justify-between mb-6">
                     <div>
                       <h3 className="text-sm text-black font-bold">Mandatory Payments</h3>
